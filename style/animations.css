@@ -1,0 +1,20 @@
+#header-links-right a {
+    position: relative;
+    display: inline-block;
+
+}
+
+#header-links-right a::before {
+    content: "";
+    position: absolute;
+    top: 95%;
+    width: 52%;
+    background-color: green;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.25s ease-in;
+}
+
+#header-links-right > a:hover::before {
+    transform: scale(1);
+}

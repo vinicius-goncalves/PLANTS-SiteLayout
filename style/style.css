@@ -14,6 +14,7 @@ body {
     font-family: 'Lato', sans-serif;
     min-height: 300vh;
     background-color: var(--color0);
+    animation: opacity 1.5s;
 }
 
 /**
@@ -45,9 +46,9 @@ body {
 }
 
 #home-image {
-    background: var(--color0) url(images/background.jpg) center center;
+    background: var(--color0) url(../images/background.jpg) center center;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-attachment: fixed;
 }
 
@@ -62,6 +63,42 @@ body {
 
 #home-description >  h1 {
     font-size: 3em;
+}
+
+#background-two {
+    width: 100%;
+    height: 65vh;
+    background-color: #ffffff10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#background-two > p {
+    padding: 25px;
+    margin: 25px;
+    color: white;
+    line-height: 50px;
+    background-color: #111111d2;
+    border-radius: 10px;
+}
+
+#background-three-image {
+    background: url(../images/background-two.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
 }
 
 /**
