@@ -3,16 +3,16 @@
 * {margin:0;padding:0;box-sizing:border-box;scroll-behavior: smooth;}
 
 :root {
-    --color0: #112622;
-    --color1: #1A4035;
-    --color2: #36735C;
-    --color3: #1E5927;
-    --color4: #29732E;
+    --color0: #122126;
+    --color1: #122126;
+    --color2: #405259;
+    --color3: #94A1A6;
+    --color4: #F2F2F2;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    min-height: 300vh;
+    min-height: 100vh;
     background-color: var(--color0);
 }
 
@@ -41,7 +41,7 @@ body {
 #header-title, #header-links-right a {
     color: white;
     padding: 0px 25px;
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 #home-feature {
@@ -50,27 +50,33 @@ body {
 }
 
 #home-image {
-    background: var(--color0) url(../images/background.jpg) center center;
+    background: var(--color0) url(../images/background.jpg) center center no-repeat;
     width: 100%;
     height: 70vh;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #home-description {
     background-color: #0000008f;
     color: white;
     position: absolute;
-    top: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 30px;
-    width: 67%;
+    min-width: 200px;
+    text-align: center;
 }
 
 #home-description >  h1 {
     font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 7px;
 }
 
 #background-two {
-    background-color: var(--color0);
+    background-color: var(--color1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +98,7 @@ body {
     background-size: cover;
     width: 100%;
     height: 65vh;
+
 }
 
 #section-three {
@@ -101,16 +108,60 @@ body {
 #background-three-image > p {
     color: white;
     background-color: #1111119f;
-    padding: 25px 100px;
     position: absolute;
+    padding: 25px 75px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 2em;
     letter-spacing: 5px;
 }
 
+#scroll-indicator-bar, #scroll-indicator  {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color2);
+    height: 5px;
+    width: 100%;
+}
+
+#scroll-indicator {
+    z-index: 101;
+    background-color: var(--color3);
+    height: 5px;
+    width: 0%;
+}
+
+footer {
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.links {
+    text-decoration: none;
+    background-color: var(--color2);
+    padding: 4px 5px;
+    transition-duration: 0.25s;
+    margin: auto;
+    width: 220px;
+}
+
+.links:visited, a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.links:hover, .links:hover:visited {
+    background-color: rgb(85, 85, 85);
+}
+
+#copyright {
+    padding: 15px 0px;
+}
 /**
  * CLASSES
  */
