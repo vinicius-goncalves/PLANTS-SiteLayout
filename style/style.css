@@ -72,7 +72,6 @@ body {
 #home-description >  h1 {
     font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 7px;
 }
 
 #background-two {
@@ -105,7 +104,7 @@ body {
     position: relative;
 }
 
-#background-three-image > p {
+#background-three-image-p {
     color: white;
     background-color: #1111119f;
     position: absolute;
@@ -115,7 +114,6 @@ body {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-size: 2em;
-    letter-spacing: 5px;
 }
 
 #scroll-indicator-bar, #scroll-indicator  {
@@ -131,7 +129,7 @@ body {
     z-index: 101;
     background-color: var(--color3);
     height: 5px;
-    width: 0%;
+    width: 0;
 }
 
 footer {
